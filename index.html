@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script src="build/script.js"></script>
+    <script defer src="build/script2.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class = "row mt-2">
+            <h1 class="display-2">To do list</h1>
+        </div>
+        <div class="row">
+            <div class="input-group mt-3">
+            <span class="input-group-text" id="basic-addon1">I need to</span>
+            <input 
+            id="todo-input" 
+            type="text"
+             class="form-control"
+              placeholder="Buy something">
+            <button id="todo-btn" class="btn-add btn-primary">Add to list</button>
+            </div>
+            <div id="error-message" class="text-danger" >
+               <!---<span>something went wrong</span> ---->
+            </div>
+        </div>
+        <div class="row mt-3 g-0">
+            <div id="todo-status">0/0</div>
+            <ul id="todo-list" class="list-group">
+            <!--   <li class="list-group-item cursor-pointer" aria-current="true"><i class="bi bi-trash3-fill"></i>
+                    <span class="ms-2 text-muted text-decoration-line-through"> A disabled item</span></li>
+                <li class="list-group-item cursor-pointer"><i class="bi bi-trash3-fill"></i>
+                   <span class="ms-2"> second item</span></li>--> 
+              </ul>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
